@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paris Visit Story</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      background: #fff;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    p {
+      background-color: #e8f0fe;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 5px solid #3b82f6;
+      border-radius: 6px;
+    }
+    span.clickable {
+      cursor: pointer;
+      color: #1d4ed8;
+      text-decoration: underline;
+      margin-right: 5px;
+    }
+    span.clickable:hover {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Trip to Paris</h1>
+
+  <p>
+    <span class="clickable" onclick="playAudio(1)">1 Last summer, I visited Paris,</span>
+    <span class="clickable" onclick="playAudio(2)">2 a beautiful city in France.</span>
+    <span class="clickable" onclick="playAudio(3)">3 I arrived at the train station early in the morning.</span>
+    <span class="clickable" onclick="playAudio(4)">4 My hotel was near the Eiffel Tower,</span>
+    <span class="clickable" onclick="playAudio(5)">5 so I asked for directions.</span>
+  </p>
+
+  <p>
+    <span class="clickable" onclick="playAudio(6)">6 The man said, “Go straight, then turn left at the corner.</span>
+    <span class="clickable" onclick="playAudio(7)">7 You will see a roundabout.</span>
+    <span class="clickable" onclick="playAudio(8)">8 Take the first exit and go past the bakery.</span>
+    <span class="clickable" onclick="playAudio(9)">9 The hotel is next to the bank and opposite the café.”</span>
+  </p>
+
+  <p>
+    <span class="clickable" onclick="playAudio(10)">10 I followed his directions.</span>
+    <span class="clickable" onclick="playAudio(11)">11 I walked across the street and went past a small park.</span>
+    <span class="clickable" onclick="playAudio(12)">12 I saw the roundabout and took the first exit.</span>
+    <span class="clickable" onclick="playAudio(13)">13 The bakery was on my right, and the bank was beside it.</span>
+    <span class="clickable" onclick="playAudio(14)">14 My hotel was in front of the bank and behind the café.</span>
+    <span class="clickable" onclick="playAudio(15)">15 I was very happy to find it!</span>
+  </p>
+
+  <!-- Add audio clips -->
+  <audio id="audio1" src="audio/audio1.m4a"></audio>
+  <audio id="audio2" src="audio/audio2.m4a"></audio>
+  <audio id="audio3" src="audio/audio3.m4a"></audio>
+  <audio id="audio4" src="audio/audio4.m4a"></audio>
+  <audio id="audio5" src="audio/audio5.m4a"></audio>
+  <audio id="audio6" src="audio/audio6.m4a"></audio>
+  <audio id="audio7" src="audio/audio7.m4a"></audio>
+  <audio id="audio8" src="audio/audio8.m4a"></audio>
+  <audio id="audio9" src="audio/audio9.m4a"></audio>
+  <audio id="audio10" src="audio/audio10.m4a"></audio>
+  <audio id="audio11" src="audio/audio11.m4a"></audio>
+  <audio id="audio12" src="audio/audio12.m4a"></audio>
+  <audio id="audio13" src="audio/audio13.m4a"></audio>
+  <audio id="audio14" src="audio/audio14.m4a"></audio>
+  <audio id="audio15" src="audio/audio15.m4a"></audio>
+
+  <script>
+    function playAudio(number) {
+      const audio = document.getElementById("audio" + number);
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      }
+    }
+  </script>
+</body>
+</html>
